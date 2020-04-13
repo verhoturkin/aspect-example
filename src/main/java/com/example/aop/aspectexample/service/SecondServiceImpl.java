@@ -11,10 +11,8 @@ public class SecondServiceImpl implements SecondService {
     public void doSomething() {
         //some logic
         try {
-            long start = System.currentTimeMillis();
             LOG.info("Inside second service");
             Thread.sleep(200);
-            LOG.info("Second service execution time: " + (System.currentTimeMillis() - start));
         } catch (InterruptedException e) {
             e.printStackTrace();
         }

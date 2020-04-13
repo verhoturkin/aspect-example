@@ -11,10 +11,8 @@ public class FirstServiceImpl implements FirstService {
     public void doSomething() {
         //some logic
         try {
-            long start = System.currentTimeMillis();
             LOG.info("Inside first service");
             Thread.sleep(500);
-            LOG.info("First service execution time: " + (System.currentTimeMillis() - start));
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
